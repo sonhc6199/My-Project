@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ソン　Fashion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="SHORTCUT ICON" href="https://www.converse.com.vn/catalog/view/theme/default/images/favicon.ico">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="1100.css" media="screen and (max-width: 1100px)">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="icon-close" onclick="openmenu(false)">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="look">
+            <div class="look-box">
+            <input class="look-txt" type="text" placeholder="Type to search">
+            <a class="look-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        </div>
+        <ul class="menu">
+            <li class="active"  onclick="opensub(true)" onmouseleave = "opensub(false)">
+                <div class="hidden">
+                    <a href="#">Women</a>
+                    <div class="icon-arrow">
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="show-sub">
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/women-ho18.png" alt="">
+                            <h3>SNEAKERS</h3>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/wo-app.png" alt="">
+                            <h3>APPAREL</h3>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/wo-acc.png" alt="">
+                            <h3>ACCESSORIES</h3>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/nav-thumb-04.png" alt="">
+                            <h3>NEWS</h3>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/nav-thumb-05.png" alt="">
+                            <h3>SALE</h3>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/men-thumb-SU20.png" alt="">
+                            <h3>PEACE</h3>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/LF-women-thumb.png" alt="">
+                            <h3>LOVE FEARLESSLY</h3>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/Renew-wm-thumb.png" alt="">
+                            <h3>RENEW</h3>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/classic-colletion-thumb.png" alt="">
+                            <h3>CLASSIC</h3>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/70s-colletion-thumb.png" alt="">
+                            <h3>THE THROWBACK</h3>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="active" >
+                <div class="hidden">
+                    <a href="#">Men</a>
+                    <div class="icon-arrow">
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="active" onclick="opensub(true)">
+                <div class="hidden">
+                    <a href="#">Kids</a>
+                    <div class="icon-arrow">
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </li>
+            <li class="no-sub">
+                <div class="hidden"><a href="#">News</a></div>
+            </li>
+            <li class="no-sub">
+                <div class="hidden"><a href="#">Stores</a></div>
+            </li>
+            <li class="no-sub">
+                <div class="hidden"><a href="#">About</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="header" id="hidden">
+        <div class="top">
+            <div class="logo-show">
+                <img src="img/newlogo-160x30.png" alt="">
+            </div>
+            <div class="right">
+                <div class="search-box">
+                    <input class="search-txt" type="text" placeholder="Type to search">
+                    <div >
+                        <a class="search-btn open" href="javascript:void(0);" onclick="searchbtn(true)">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a class="search-btn close"  href="javascript:void(0);" onclick="searchbtn(false);">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="language">
+                    <a class="language-txt VN" href="javascript:void(0);" onclick="changeLanguage(true)">
+                        <p>VI</p>
+                    </a>
+                    <a class="language-txt EN" href="javascript:void(0);" onclick="changeLanguage(false)">
+                        <p>EN</p>
+                    </a>
+                </div>
+                <div class="icon-menu" onclick="openmenu(true)">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <ul class="menu">
+                <li class="active">
+                    <a href="#">Women</a>
+                    <div class="show-sub first">
+                        <div class="all-items">
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/women-ho18.png" alt="">
+                                    <h3>SNEAKERS</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/wo-app.png" alt="">
+                                    <h3>APPAREL</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/wo-acc.png" alt="">
+                                    <h3>ACCESSORIES</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/nav-thumb-04.png" alt="">
+                                    <h3>NEWS</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/nav-thumb-05.png" alt="">
+                                    <h3>SALE</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="all-items">
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/men-thumb-SU20.png" alt="">
+                                    <h3>PEACE</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/LF-women-thumb.png" alt="">
+                                    <h3>LOVE FEARLESSLY</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/Renew-wm-thumb.png" alt="">
+                                    <h3>RENEW</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/classic-colletion-thumb.png" alt="">
+                                    <h3>CLASSIC</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/70s-colletion-thumb.png" alt="">
+                                    <h3>THE THROWBACK</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="#">Men</a>
+                    <div class="show-sub secondary">
+                        <div class="all-items">
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/me-ho18.png" alt="">
+                                    <h3>SNEAKERS</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/me-app.png" alt="">
+                                    <h3>APPAREL</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/me-acc.png" alt="">
+                                    <h3>ACCESSORIES</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/nav-thumb-04.png" alt="">
+                                    <h3>NEWS</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/nav-thumb-05.png" alt="">
+                                    <h3>SALE</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="all-items">
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/167048shot3THUMB.png" alt="">
+                                    <h3>CONXT</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/men-thumb-SU20.png" alt="">
+                                    <h3>PEACE</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/LF-women-thumb.png" alt="">
+                                    <h3>LOVE FEARLESSLY</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/Renew-wm-thumb.png" alt="">
+                                    <h3>RENEW</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/classic-colletion-thumb.png" alt="">
+                                    <h3>CLASSIC</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/70s-colletion-thumb.png" alt="">
+                                    <h3>THE THROWBACK</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/one-star-collection.png" alt="">
+                                    <h3>ONE STAR</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="#">Kids</a>
+                    <div class="show-sub third">
+                        <div class="all-items">
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/me-ho18.png" alt="">
+                                    <h3>SNEAKERS</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/me-app.png" alt="">
+                                    <h3>APPAREL</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/me-acc.png" alt="">
+                                    <h3>ACCESSORIES</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/nav-thumb-04.png" alt="">
+                                    <h3>NEWS</h3>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/nav-thumb-05.png" alt="">
+                                    <h3>SALE</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="no-sub"><a href="#">News</a></li>
+                <li class="no-sub"><a href="#">Stores</a></li>
+                <li class="no-sub"><a href="#">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="img">
+                <img src="img/Twisted-Classic-Run-Hike-Home-Slide.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="img">
+                <img src="img/Sale-HomeSlide.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="img">
+                <img src="img/converselove-fearlessly-homepagedesktop.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="img">
+                <img src="img/conversepeace-su20-flow2chuck70homepage-slide-banner.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="img">
+                <img src="img/Twisted-Classic-Run-Hike-Home-Slide.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="img">
+                <img src="img/Sale-HomeSlide.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="img">
+                <img src="img/converselove-fearlessly-homepagedesktop.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="img">
+                <img src="img/conversepeace-su20-flow2chuck70homepage-slide-banner.jpg" alt="">
+            </div>
+        </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="product-title">
+                <h1>Popular item</h1>
+            </div>
+            <div class="product-type">
+                <a href="#" onmousemove="arrowMoveMen()">
+                    <h2>Men</h2>
+                    <div class="img">
+                        <img src="img/mensp20.png" alt="">
+                    </div>
+                </a>
+                <a href="#" onmousemove="arrowMoveWomen()">
+                    <h2>Women</h2>
+                    <div class="img">
+                        <img src="img/2.JPG" alt="">
+                    </div>
+                </a>
+                <a href="#" onmousemove="arrowMoveKids()">
+                    <h2>Kids</h2>
+                    <div class="img">
+                        <img src="img/kids-fa19.png" alt="">
+                    </div>
+                </a>
+                <div class="arrow">
+                    <div class="arrow-down"></div>
+                </div>
+            </div>
+            <div class="products" id="slides">
+                <div class="wrap">
+                    <div class="popular">
+                       <div class="col-1">
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/men1.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/men2.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/men3.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/men4.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-1">
+                        <div class="item">
+                            <a href="#">
+                             <span>sneakers</span>
+                             <img src="img/men5.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                             <span>sneakers</span>
+                             <img src="img/men6.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                             <span>sneakers</span>
+                             <img src="img/men7.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                             <span>sneakers</span>
+                             <img src="img/men8.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/men9.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/men10.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/men11.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/men12.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                       </div>
+                    </div>
+                     <div class="popular">
+                       <div class="col-1">
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/women1.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/women2.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/women3.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/women4.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-1">
+                        <div class="item">
+                            <a href="#">
+                             <span>sneakers</span>
+                             <img src="img/women5.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                             <span>sneakers</span>
+                             <img src="img/women6.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                             <span>sneakers</span>
+                             <img src="img/women7.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                             <span>sneakers</span>
+                             <img src="img/women8.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/women9.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/women10.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/women11.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/women12.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                       </div>
+                    </div>
+                     <div class="popular">
+                       <div class="col-1">
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/kids1.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/kids2.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/kids3.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/kids4.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-1">
+                        <div class="item">
+                            <a href="#">
+                             <span>sneakers</span>
+                             <img src="img/kids5.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="details.html" target="_blank">
+                             <span>sneakers</span>
+                             <img src="img/kids6.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                             <span>sneakers</span>
+                             <img src="img/kids7.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                             <span>sneakers</span>
+                             <img src="img/kids8.jpg" alt="">
+                             <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                             <h4>#167821C</h4>
+                             <p>VND 2,000,000</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/kids9.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/kids10.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/kids11.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                           <div class="item">
+                               <a href="#">
+                                <span>sneakers</span>
+                                <img src="img/kids12.jpg" alt="">
+                                <h3>Chuck 70 Clean 'n Preme HiTop</h3>
+                                <h4>#167821C</h4>
+                                <p>VND 2,000,000</p>
+                               </a>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="item">
+                    <a href="#">
+                        <div class="img">
+                            <img src="img/box-1.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+               <div class="item">
+                <a href="#">
+                    <div class="img">
+                        <img src="img/box-2.jpg" alt="">
+                    </div>
+                </a>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap-footer">
+            <div class="logo-bottom fix">
+                <img src="img/logo-bottom.png" alt="">
+            </div>
+            <div class="col-1 fix">
+                <ul class="menu-footer">
+                    <h3>Women</h3>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Collection</a></li>
+                </ul>
+            </div>
+            <div class="col-1">
+                <ul class="menu-footer">
+                    <h3>Men</h3>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Collection</a></li>
+                </ul>
+            </div>
+            <div class="col-1">
+                <ul class="menu-footer">
+                    <h3>Kids</h3>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="col-1">
+                <ul class="menu-footer">
+                    <a href="#"><h3>News</h3></a>
+                    <a href="#"><h3>Stores</h3></a>
+                    <a href="#"><h3>About</h3></a>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="special-menu">
+                    <h4>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ THÁI CỰC DÚI</h4>
+                    <p>Mã Số Thuế : 611999</p>
+                    <li>
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <a href="#">Xã Liên Trung, Huyện Đan Phượng, Thành Phố Hà Nội</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fas fa-phone-square-alt"></i>
+                            </div>
+                            <a href="#">038 - 846 - 9746</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <a href="#">congson6199@gmail.com</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <a href="#">https://www.facebook.com/caibapp99</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <div class="fb-ytb">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="fb-ytb">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+    <div class="coppy-right">
+        <p>
+            2020  ©  
+            <strong>Converse VIETNAM</strong>
+            . All rights reserved.  
+            <a href="#" target="_blank">
+                DEVELOPED BY CONGSON
+            </a>
+        </p>
+    </div>
+    <script src="swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+            }
+        });
+    </script>
+</body>
+</html>
